@@ -7,6 +7,8 @@ spec:
     name: buildah-tekton-pipeline
   serviceAccountName: build-bot
   params:
+    - name: app-name
+      value: buildah-pipeline-app
     - name: source-repo
       value: https://github.com/cloud-native-garage-method-cohort/peter-christian-buildah-app-v2
     - name: image-repo
